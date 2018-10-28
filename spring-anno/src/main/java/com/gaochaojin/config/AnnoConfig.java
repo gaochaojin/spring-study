@@ -16,9 +16,9 @@ import org.springframework.stereotype.Controller;
  */
 @Configuration
 @ComponentScan(value = "com.gaochaojin", useDefaultFilters = false,
-//        includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Controller.class)})//过滤类型为注解
+        includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Controller.class)})//过滤类型为注解
 //        includeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = OrderController.class)})//过滤类型为指定类型
-        includeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM, classes = CustomFilterConfig.class)})//过滤类型为自定义的类型
+//        includeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM, classes = CustomFilterConfig.class)})//过滤类型为自定义的类型
 //        excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Controller.class)})
 public class AnnoConfig {
 
