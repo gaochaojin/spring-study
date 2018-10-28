@@ -1,4 +1,5 @@
 import com.gaochaojin.config.ConditionalConfig;
+import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -9,7 +10,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class TestConditional {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(ConditionalConfig.class);
 
         System.out.println("IOC容器创建完成。。。。。。");

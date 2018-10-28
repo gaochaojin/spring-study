@@ -1,5 +1,6 @@
 import com.gaochaojin.config.BeanScopeConfig;
 import com.gaochaojin.config.LazyConfig;
+import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -10,7 +11,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class TestLazy {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(LazyConfig.class);
 
         System.out.println("IOC容器创建完成。。。。。。");

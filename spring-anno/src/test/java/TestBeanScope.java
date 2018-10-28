@@ -1,4 +1,5 @@
 import com.gaochaojin.config.BeanScopeConfig;
+import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -9,7 +10,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class TestBeanScope {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanScopeConfig.class);
 
         //从容器中分别取两次person实例，看是否为同一个bean
