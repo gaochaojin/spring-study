@@ -21,7 +21,9 @@ public class TestLifeCycle {
      *    @preDestroy： 在bean被移除之前进行通知，在容器销毁之前进行清理工作
      * 4：BeanPostProcessor bean的后置处理器，在bean初始化之前调用进行拦截，在bean初始化前后进行一些处理工作使用BeanPostProcessor控制Bean的声明周期
      *   实现接口BeanPostProcessor的两个接口即可===》postProcessBeforeInitialzation，postprocessAfterInitialzation
-     */
+     *
+     *   总结：Spring底层对BeanPostProcessor的使用，包括bean的赋值，注入其他组件，生命周期注解功能等
+   */
 
     @Test
     public void test() {
