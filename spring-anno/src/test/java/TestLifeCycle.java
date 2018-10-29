@@ -19,6 +19,8 @@ public class TestLifeCycle {
      * 3：使用JSR250规则定义的两个注解实现：----Jeep
      *    @PostConstruct： 在Bean创建完成，且属于赋值完成后进行初始化，属于JDk规范的注解
      *    @preDestroy： 在bean被移除之前进行通知，在容器销毁之前进行清理工作
+     * 4：BeanPostProcessor bean的后置处理器，在bean初始化之前调用进行拦截，在bean初始化前后进行一些处理工作使用BeanPostProcessor控制Bean的声明周期
+     *   实现接口BeanPostProcessor的两个接口即可===》postProcessBeforeInitialzation，postprocessAfterInitialzation
      */
 
     @Test
