@@ -27,11 +27,11 @@ public class TestAutowired {
         System.out.println(testDao);*/
 
         //测试@Autowired的位置
-        Moon moon = applicationContext.getBean(Moon.class);
+        /*Moon moon = applicationContext.getBean(Moon.class);
         System.out.println(moon);
 
         Sun sun = applicationContext.getBean(Sun.class);
-        System.out.println(sun.getMoon());
+        System.out.println(sun.getMoon());*/
 
         applicationContext.close();
 
