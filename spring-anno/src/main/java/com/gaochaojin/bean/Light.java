@@ -24,12 +24,12 @@ public class Light implements ApplicationContextAware, BeanNameAware, EmbeddedVa
     }
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("IOC容器上下文：" + applicationContext);
+        System.out.println("获取IOC容器：" + applicationContext);
         this.applicationContext = applicationContext;
     }
 
     public void setEmbeddedValueResolver(StringValueResolver resolver) {
-        //用于获取数据@Value
+        //用于获取数据@Value --表达式及相关脚本解析
         String result = resolver.resolveStringValue("你好${os.name}；你已经#{3*8}年了");
         System.out.println("解析数据为：" + result);
     }
