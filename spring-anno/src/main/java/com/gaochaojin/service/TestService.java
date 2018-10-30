@@ -17,14 +17,14 @@ import javax.inject.Inject;
 @Service
 public class TestService {
 
-//    @Qualifier("testDao")
-//    @Autowired(required=false)
+    @Qualifier("testDao2")
+    @Autowired(required=false)
 //    @Resource  //1：不支持Primary功能；2：不支持Autowired false
-    @Inject //需要在pom.xml中引入javax.inject，和Autowired功能差不多，支持@Primary，只是没有Autowired false
+//    @Inject //需要在pom.xml中引入javax.inject，和Autowired功能差不多，支持@Primary，只是没有Autowired false
     private TestDao testDao;
 
     public void println() {
-        System.out.println(testDao);
+        System.out.println("service===" + testDao);
     }
 
 
