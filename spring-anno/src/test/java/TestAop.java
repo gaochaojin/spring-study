@@ -16,7 +16,7 @@ public class TestAop {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AopConfig.class);
 
         Calculator calculator = applicationContext.getBean(Calculator.class);
-        int result = calculator.div(4, 3);
+        int result = calculator.div(4, 2);
         System.out.println(result);
 
     }
